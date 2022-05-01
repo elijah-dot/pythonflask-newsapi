@@ -1,16 +1,15 @@
-<!-- styles block -->
-
-<!-- content  -->
-
-{%extends "base.html" %} {% block content %} {% import 'macros.html' as macro%}
+{%extends "base.html" %} {% import 'macros.html' as macro%} {% block content %}
 <link
   rel="stylesheet"
   href="{{url_for('static',filename='css/display.css')}}"
   type="text/css"
 />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+  rel="stylesheet"
+/>
 
 <div class="one">
   <h1>
@@ -28,128 +27,129 @@
 </div>
 <div class="two">
   <h1>Categories</h1>
-   <!-- {% extends 'base.html' %} {% import 'macros.html' as macro%} -->
+  
 
-
-{% block content %}
-<div class="container-fluid">
+  <div class="container-fluid">
     <form>
-        <input type="text" name="article_query" placeholder="Search for News" class="form-control">
-        <input type="submit" value="Get News" class="btn">
+      <input
+        type="text"
+        name="article_query"
+        placeholder="Search for News"
+        class="form-control"
+      />
+      <input type="submit" value="Get News" class="btn" />
     </form>
     <div class="row">
-        <div class="col-md-12 heading">
-            <br>
-            <br>
-            <h1>Nouvelles Center | Indulge yourself with news from allover the world!</h1>
-        </div>
+      <!-- <div class="col-md-12 heading">
+        <br />
+        <br />
+        <h1>
+          News Point
+            
+        </h1>
+      </div> -->
     </div>
     <div class="card">
-        <div class="row">
-            <div class="col-md-12 cat" id="general news">
-                <h1>General News</h1>
-            </div>
-            {{macro.sourceCategories(general)}}
+      <div class="row">
+        <div class="col-md-12 cat" id="general news">
+          <h1>General News</h1>
         </div>
+        {{macro.sourceCategories(general)}}
+      </div>
     </div>
-    <hr>
+    <hr />
     <div class="row">
-        <div class="col-md-12 cat" id="sports">
-            <h1> Sports </h1>
-        </div>
-        {{macro.sourceCategories(sports)}}
+      <div class="col-md-12 cat" id="sports">
+        <h1>Sports</h1>
+      </div>
+      {{macro.sourceCategories(sports)}}
     </div>
-    <hr>
+    <hr />
     <div class="row">
-        <div class="col-md-12 cat" id="business">
-            <h1> Business </h1>
-        </div>
-        {{macro.sourceCategories(business)}}
+      <div class="col-md-12 cat" id="business">
+        <h1>Business</h1>
+      </div>
+      {{macro.sourceCategories(business)}}
     </div>
-    <hr>
+    <hr />
     <div class="row">
-        <div class="col-md-12 cat" id="technology">
-            <h1> Technology </h1>
-        </div>
-        {{macro.sourceCategories(technology)}}
+      <div class="col-md-12 cat" id="technology">
+        <h1>Technology</h1>
+      </div>
+      {{macro.sourceCategories(technology)}}
     </div>
-    <hr>
+    <hr />
     <div class="row">
-        <div class="col-md-12 cat" id="entertainment">
-            <h1> Entertainment </h1>
-        </div>
-        {{macro.sourceCategories(entertainment)}}
+      <div class="col-md-12 cat" id="entertainment">
+        <h1>Entertainment</h1>
+      </div>
+      {{macro.sourceCategories(entertainment)}}
     </div>
-    <hr>
+    <hr />
     <div class="row">
-        <div class="col-md-12 cat" id="science">
-            <h1> Science </h1>
-        </div>
-        {{macro.sourceCategories(science)}}
+      <div class="col-md-12 cat" id="science">
+        <h1>Science</h1>
+      </div>
+      {{macro.sourceCategories(science)}}
     </div>
-</div>
-
-<!-- {% endblock %} -->
-
+  </div>
 </div>
 
 <div class="footer">
-    <h3>Get To Know Us</h3>
-    <div class="top">
-        
-        <div class="text2">
-            <div class="box1">
-                <h1>FEEDBACK</h1>
-            </div>
-          
-          <p>
-            Designed and built with all the love in the world by the feedback team
-            with the help of our contributors. Code licensed MIT, docs CC BY 3.0.
-            Currently v5.0.2.
-          </p>
-        </div>
-        <table class="table table-transparent table-borderless">
-          <thead>
-            <tr>
-              <th scope="col">links</th>
-              <th scope="col">projects</th>
-              <th scope="col">guides</th>
-              <th scope="col">community</th>
-              <th scope="col">contacts</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">home</td>
-              <td>geting started</td>
-              <td>repositories</td>
-              <td>issues</td>
-              <td>facebook</td>
-            </tr>
-            <tr>
-              <td scope="row">docs</td>
-              <td>Starter template</td>
-              <td>profile pic</td>
-              <td>discusion</td>
-              <td>whatsapp</td>
-            </tr>
-            <tr>
-              <td scope="row">docs</td>
-              <td>Starter template</td>
-              <td>profile pic</td>
-              <td>discusion</td>
-              <td>linkedIn</td>
-            </tr>
-            <tr>
-              <td scope="row"></td>
-              <td colspan="2"></td>
-              
-              <td>@twitter</td>
-              <td>instagram</td>
-            </tr>
-          </tbody>
-        </table>
+  <h3>Get To Know Us</h3>
+  <div class="top">
+    <div class="text2">
+      <div class="box1">
+        <h1>FEEDBACK</h1>
       </div>
-</div>
 
+      <p>
+        Designed and built with all the love in the world by the feedback team
+        with the help of our contributors. Code licensed MIT, docs CC BY 3.0.
+        Currently v5.0.2.
+      </p>
+    </div>
+    <table class="table table-transparent table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">links</th>
+          <th scope="col">projects</th>
+          <th scope="col">guides</th>
+          <th scope="col">community</th>
+          <th scope="col">contacts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">home</td>
+          <td>geting started</td>
+          <td>repositories</td>
+          <td>issues</td>
+          <td>facebook</td>
+        </tr>
+        <tr>
+          <td scope="row">docs</td>
+          <td>Starter template</td>
+          <td>profile pic</td>
+          <td>discusion</td>
+          <td>whatsapp</td>
+        </tr>
+        <tr>
+          <td scope="row">docs</td>
+          <td>Starter template</td>
+          <td>profile pic</td>
+          <td>discusion</td>
+          <td>linkedIn</td>
+        </tr>
+        <tr>
+          <td scope="row"></td>
+          <td colspan="2"></td>
+
+          <td>@twitter</td>
+          <td>instagram</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 {% endblock %}
