@@ -1,9 +1,3 @@
-
-
-
-
-
-
 #make a virtual env for this project.
 from flask import Flask,render_template
 from newsapi import NewsApiClient
@@ -18,6 +12,8 @@ app = Flask(__name__)
 def navbar():
     
     return render_template("navbar.html")
+
+
 # create a route function 
 
 @app.route('/')
