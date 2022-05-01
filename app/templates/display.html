@@ -1,13 +1,16 @@
+<!-- styles block -->
 
 
-{% extends "base.html" %}
+<!-- content  -->
+
+{%extends "base.html" %}
 {% block display %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/display.css')}}" type="text/css">
+<div class="one">
+    <h1>Top news <span>around </span><br> the world</h1>
+    <p>If people in the media cannot decide whether they are in the business of  reporting news or manufacturing propaganda, <br> it is all the more important that the public understand that difference, and <br> choose their news sources accordingly.
+        Read more at https://www.brainyquote.com/topics/news-quotes</p>
+        
+</div>
 
-<h1>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa numquam
-  voluptate molestiae quisquam odit eveniet illum reiciendis voluptatum,
-  eligendi nam at a omnis accusantium, provident magnam natus ipsam. Tempore,
-  atque?
-</h1>
-
-{% endblock%}
+{% endblock %}

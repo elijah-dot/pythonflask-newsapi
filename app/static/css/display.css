@@ -1,0 +1,14 @@
+span{
+    color: crimson;
+}
+
+.one{
+    background-color:black;
+    height: 30vh;
+    width: 95vw;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 0px 0px 50px 0px;
+
+    
+}
