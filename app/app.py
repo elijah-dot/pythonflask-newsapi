@@ -9,9 +9,8 @@ from newsapi import NewsApiClient
 app = Flask(__name__)
 # navbar
 @app.route('/')
-def navbar():
-    
-    return render_template("navbar.html")
+def display():
+    return render_template("display.html")
 
 
 # create a route function 

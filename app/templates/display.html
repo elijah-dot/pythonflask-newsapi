@@ -1,5 +1,13 @@
-<!-- styles block -->
-{% block styles%}
-{{super()}}
-<link rel="stylesheet" href="{{url_for('static'filename='css/display.css')}}" type="text/css">
+
+
+{% extends "base.html" %}
+{% block display %}
+
+<h1>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa numquam
+  voluptate molestiae quisquam odit eveniet illum reiciendis voluptatum,
+  eligendi nam at a omnis accusantium, provident magnam natus ipsam. Tempore,
+  atque?
+</h1>
+
 {% endblock%}
