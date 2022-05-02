@@ -9,7 +9,7 @@ span {
 
 .one {
   background-color: black;
-  height: 30vh;
+  height: 50vh;
   width: 95vw;
   text-align: center;
   color: aliceblue;
@@ -30,6 +30,11 @@ span {
   color: aliceblue;
   margin-top: 20px;
 
+}
+.heading {
+  color: red;
+  font-size: 60px;
+  font-family: 'Lobster', cursive;
 }
 tr {
   margin: 0px;
@@ -64,6 +69,18 @@ tr {
 td:hover{
     color: red;
     text-decoration: underline;
+}
+.two{
+    background-color:red;
+}
+.two h1{
+    text-align: center;
+    color:aliceblue;
+    text-decoration: underline;
+    
+}
+.txt{
+  font-size: 21px;
 }
 
 
